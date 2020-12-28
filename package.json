@@ -4,7 +4,10 @@
   "description": "React Hook Handle Click Outside",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -17,21 +20,16 @@
     "url": "https://github.com/magicd-ops/handle-click-outside/issues"
   },
   "homepage": "https://github.com/magicd-ops/handle-click-outside#readme",
-  "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
-    "babel-loader": "^8.2.1",
-    "css-loader": "^5.0.1",
-    "file-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^1.3.1",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.0"
+    "@babel/cli": "^8.2.1"
+  },
+  "dependencies": {
+    "react-scripts": "^4.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@material-ui/core": "^4.11.2"
   }
 }
