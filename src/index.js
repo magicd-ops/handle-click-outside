@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+//import { Box } from '@material-ui/core';
 
 let Global = {
     ref: [],
@@ -62,27 +62,27 @@ const initRef = ({useState, useRef, useEffect, document, index}) => {
     const RefBox = (props) => {
         let [ newProps, display ] = createObjectFromProps(props);
         return (
-            <Box
+            <div
                 {...newProps}
                 ref={Global.ref[index]}
                 index={index}
                 display={Global.state[index][0] ? display : 'none'}
             >
                 {props.children}
-            </Box>
+            </div>
         )
     }
     
     const OrigBox = (props) => {
         let [ newProps ] = createObjectFromProps(props, ['onClick']);
         return (
-            <Box
+            <div
                 {...newProps}
                 index={index}
                 onClick={() => handleClickBox(index)}
             >
                 {props.children}
-            </Box>
+            </div>
         )
     }
 
