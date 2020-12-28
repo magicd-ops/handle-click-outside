@@ -1,0 +1,24 @@
+{
+  "name": "handle-click-outside",
+  "version": "0.0.1",
+  "description": "React Hook Handle Click Outside",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicd-ops/handle-click-outside.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicd-ops/handle-click-outside/issues"
+  },
+  "homepage": "https://github.com/magicd-ops/handle-click-outside#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "react": "^17.0.1"
+  }
+}
