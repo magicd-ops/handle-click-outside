@@ -44,7 +44,7 @@ const createObjectFromProps = (props, extendedBypassProps) => {
             display = props[prop];
         }
     });
-    return {newProps, display};
+    return [ newProps, display ];
 }
 
 const initRef = ({useState, useRef, useEffect, document, index}) => {
@@ -60,7 +60,7 @@ const initRef = ({useState, useRef, useEffect, document, index}) => {
     Global.state[index] = useState(false);
 
     const RefBox = (props) => {
-        let { newProps, display } = createObjectFromProps(props);
+        let [ newProps, display ] = createObjectFromProps(props);
         return (
             <Box
                 {...newProps}
@@ -74,7 +74,7 @@ const initRef = ({useState, useRef, useEffect, document, index}) => {
     }
     
     const OrigBox = (props) => {
-        let { newProps } = createObjectFromProps(props, ['onClick']);
+        let [ newProps ] = createObjectFromProps(props, ['onClick']);
         return (
             <Box
                 {...newProps}
