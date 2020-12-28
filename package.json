@@ -1,6 +1,6 @@
 {
   "name": "handle-click-outside",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Hook Handle Click Outside",
   "main": "index.js",
   "scripts": {
